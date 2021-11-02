@@ -8,5 +8,5 @@ SD=$(dirname $0)
 
 for f in $(ls $SD/../v2 | grep -v $VERSION | grep -v current); do
     echo removing $f
-    rm -rf $SD/../$f
+    rm -rf $SD/../v2/$f
 done
